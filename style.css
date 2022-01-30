@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(malaga.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main-1{
+    background-color: rgb(110, 110, 160);
+    height: 500px;
+    width: 425px;
+    margin: 50px;
+    padding: 20px 0 0 0;
+    border: 1.3px solid gold;
+    border-radius: 20px;
+    position: absolute;
+}
+.main-1 .h-4{
+    border-bottom: 2px solid orange;
+}
+.container .input{
+    padding: 20px 0 20px 0;
+}
+.total{
+    padding: 15px 0 0 0;
+}
+.h-total{
+    border-top: 2px solid orange;
+}
+.total button{
+    background-color: navajowhite;
+    padding: 10px 40px;
+    border-style: none;
+    border: 2px solid rgb(11, 245, 155);
+    border-radius: 30px;
+    
+}
+.main-input{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    position: absolute;
+    display: none;
+}
+.main-2{
+    margin: 50px;
+    width: 400px;
+    height: 500px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    padding: 20px;
+}
+.main-2 input{
+    margin: 20px;
+}
+.main-2 samp{
+    margin: 20px;
+}
+.main-2 button{
+    background-color: goldenrod;
+    padding: 10px 40px;
+    border-style: none;
+    border: 2px solid rgb(11, 245, 155);
+    border-radius: 30px;
+}

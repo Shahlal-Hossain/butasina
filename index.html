@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book air tickets online </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f07d72bdf8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="main-1">
+            <div>
+                <div class="container text-center text-white">
+                    <h4 class="h-4">Book Flight Tickets</h4>
+                    <div class="input">
+                        <input type="country" value="where are your from" ><i class="fas fa-exchange-alt"></i>
+                        <input type="country" value="where are your goaing ">
+                        <input type="date" name="" id="">
+                        </div>
+                    <div>
+                        <h5>First Class  ৳60500 :<input type="checkbox" name="First Class" id=""><i class="fas fa-minus-square" onclick="'first',false"></i>
+                        <samp id="first">0</samp> 
+                        <i class="fas fa-plus" onclick="'First',true"></i></h5>
+                    </div>
+                    <div>
+                        <h5>Business  ৳50500 :<input type="checkbox" name="Business" id="">
+                        <i class="fas fa-minus-square " onclick="'business',true">
+                        </i> <samp id="business">0</samp>
+                         <i class="fas fa-plus" onclick="'business',false"></i></h5>
+                    </div>
+                    <div>
+                        <h5>Economy  ৳40500 :<input type="checkbox" name="Economy" id="">
+
+                        <i class="fas fa-minus-square" onclick="'economy',false" ></i> 
+                        <samp id="economy">0</samp> 
+                        <i class="fas fa-plus" onclick="'economy',true"></i></h5>
+                    </div>
+                    <div>
+                        <h5>pre-economy ৳30500 :<input type="checkbox" name="Premium economy" id="">
+
+                        <i class="fas fa-minus-square" onclick="'preminm-economy',false"></i> 
+                        <samp id="preminm-economy">3</samp> 
+                        <i class="fas fa-plus" onclick="'preminm-economy',true"></i> </h5>
+                    </div>
+                    
+                </div>
+                <div class="total">
+                    <div class="container text-center text-white">
+                        <h4>Subtotal : <samp id="sub-total">000</samp>৳</h4>
+                        <h4>VAT 15% : <samp id="vat">000</samp>৳</h4>
+                        <h4 class="h-total">Total : <samp id="total">000</samp>৳</h4>
+                        <button type="submit" id="submit">SUBMIT</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main-input">
+        <div class="main-2  text-center text-white">
+        <samp>Number :</samp><input type="number" name="" id="">
+        <samp>Email :</samp><input type="email" name="" id="">
+        <samp>Name :</samp><input type="name">
+        <samp>Country :</samp><input type="country">
+        <button  type="submit">Submit</button>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
