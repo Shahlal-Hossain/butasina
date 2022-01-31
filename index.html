@@ -12,61 +12,64 @@
 
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <div class="main-1">
             <div>
                 <div class="container text-center text-white">
                     <h4 class="h-4">Book Flight Tickets</h4>
                     <div class="input">
-                        <input type="country" value="where are your from" ><i class="fas fa-exchange-alt"></i>
+                        <input type="country" value="where Flight from" > 
+                        <i class="fas fa-exchange-alt"></i>
                         <input type="country" value="where are your goaing ">
                         <input type="date" name="" id="">
                         </div>
                     <div>
-                        <h5>First Class  ৳60500 :<input type="checkbox" name="First Class" id=""><i class="fas fa-minus-square" onclick="'first',false"></i>
-                        <samp id="first">0</samp> 
-                        <i class="fas fa-plus" onclick="'First',true"></i></h5>
+                        <span>First Class  ৳60500 : </span>
+                        <i class="fas fa-minus-square" onclick="hendelTicket('first',false)" ></i>
+                        <span id="first">0</span>
+                        <i class="fas fa-plus" onclick="hendelTicket('first',true)" ></i>
                     </div>
                     <div>
-                        <h5>Business  ৳50500 :<input type="checkbox" name="Business" id="">
-                        <i class="fas fa-minus-square " onclick="'business',true">
-                        </i> <samp id="business">0</samp>
-                         <i class="fas fa-plus" onclick="'business',false"></i></h5>
+                        <span> Business  ৳50500 :</span>
+                        <i class="fas fa-minus-square" onclick="hendelTicket('business',false)" ></i> 
+                        <span id="business">0</span>
+                         <i class="fas fa-plus" onclick="hendelTicket('business',true)" ></i>
                     </div>
                     <div>
-                        <h5>Economy  ৳40500 :<input type="checkbox" name="Economy" id="">
+                        <span> Economy  ৳40500 :</span>
 
-                        <i class="fas fa-minus-square" onclick="'economy',false" ></i> 
-                        <samp id="economy">0</samp> 
-                        <i class="fas fa-plus" onclick="'economy',true"></i></h5>
+                        <i class="fas fa-minus-square" onclick="hendelTicket('economy',false)" ></i> 
+                        <span id="economy">0</span> 
+                        <i class="fas fa-plus" onclick="hendelTicket('economy',true)"></i>
                     </div>
                     <div>
-                        <h5>pre-economy ৳30500 :<input type="checkbox" name="Premium economy" id="">
-
-                        <i class="fas fa-minus-square" onclick="'preminm-economy',false"></i> 
-                        <samp id="preminm-economy">3</samp> 
-                        <i class="fas fa-plus" onclick="'preminm-economy',true"></i> </h5>
+                       <span >pre-economy ৳30500 : </span>
+                        <i class="fas fa-minus-square" onclick="hendelTicket('preminm-economy',false)" ></i> 
+                        <span id="preminm-economy">0</span> 
+                        <i class="fas fa-plus" onclick="hendelTicket('preminm-economy',true)" ></i>
                     </div>
                     
                 </div>
                 <div class="total">
                     <div class="container text-center text-white">
-                        <h4>Subtotal : <samp id="sub-total">000</samp>৳</h4>
-                        <h4>VAT 15% : <samp id="vat">000</samp>৳</h4>
-                        <h4 class="h-total">Total : <samp id="total">000</samp>৳</h4>
-                        <button type="submit" id="submit">SUBMIT</button>
+                        <h4>Subtotal : <span id="sub-total">000</span>৳</h4>
+                        <h4>VAT 5% : <span id="vat">000</span>৳</h4>
+                        <h4 class="h-total">Total : <span id="total">000</span>৳</h4>
+
+                        <button type="submit" onclick="bookTicket()">SUBMIT</button>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="main-input">
+
+    <div class="main-input" id="main-input">
         <div class="main-2  text-center text-white">
-        <samp>Number :</samp><input type="number" name="" id="">
-        <samp>Email :</samp><input type="email" name="" id="">
-        <samp>Name :</samp><input type="name">
-        <samp>Country :</samp><input type="country">
+        <span>Number :</span><input type="text" name="" id="">
+        <span>Email :</span><input type="email" name="" id="">
+        <span>Name :</span><input type="name">
+        <span>Country :</span><input type="country">
         <button  type="submit">Submit</button>
     </div>
     </div>
